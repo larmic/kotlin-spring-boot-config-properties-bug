@@ -25,3 +25,9 @@ Caused by: org.springframework.boot.context.properties.bind.validation.BindValid
 When build with 1.2.10 no error occurs
 
 When removing validation no exception occurs but properties are not injected.
+
+See bugs: 
+* https://youtrack.jetbrains.com/issue/KT-22380
+* https://youtrack.jetbrains.com/issue/KT-21581
+
+Workaround: add ``<kotlin.compiler.incremental>false</kotlin.compiler.incremental>`` to properties in pom.xml
